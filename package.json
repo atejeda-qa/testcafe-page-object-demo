@@ -1,0 +1,35 @@
+{
+  "name": "testcafe-page-object-demo",
+  "version": "1.0.0",
+  "description": "How to use page object model pattern with testcafe framework",
+  "main": "index.js",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20"
+  },
+  "devDependencies": {
+    "testcafe": "^1.9.1",
+    "testcafe-reporter-html": "^1.4.6",
+    "testcafe-reporter-spec": "^2.1.1"
+  },
+  "scripts": {
+    "test": "testcafe src/test",
+    "browsers-list": "testcafe --list-browsers"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atejeda-qa/testcafe-page-object-demo.git"
+  },
+  "keywords": [
+    "page",
+    "object",
+    "model",
+    "testcafe",
+    "demo"
+  ],
+  "author": "Alfred Tejeda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atejeda-qa/testcafe-page-object-demo/issues"
+  },
+  "homepage": "https://github.com/atejeda-qa/testcafe-page-object-demo#readme"
+}

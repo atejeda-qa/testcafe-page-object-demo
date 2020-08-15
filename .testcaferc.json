@@ -1,0 +1,25 @@
+{
+    "browsers": [
+        "edge",
+        "firefox"
+    ],
+    "videoPath": "reports/recordings",
+    "videoOptions": {
+        "singleFile": false,
+        "failedOnly": false,
+        "pathPattern": "/${USERAGENT}/${DATE}_${TIME}_${TEST}.mp4"
+    },
+    "videoEncodingOptions": {
+        "r": 10,
+        "aspect": "21:9"
+    },
+    "reporter": [
+        {
+            "name": "html",
+            "output": "reports/report.html"
+        },
+        {
+            "name": "spec"
+        }
+    ]
+}
