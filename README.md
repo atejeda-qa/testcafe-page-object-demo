@@ -11,3 +11,5 @@ Project to show how to use page object model with Testcafe framework
 ```sh 
 $ npm test
 ```
+## Architecture
+This project implement [Page Object Model](https://medium.com/tech-tajawal/page-object-model-pom-design-pattern-f9588630800b)
