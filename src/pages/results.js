@@ -3,7 +3,7 @@ import { Selector } from 'testcafe'
 class Results {
     constructor() {
         /** 
-        * Groupy elements by html type
+        * Group elements by html tag
         * @example input, button, span, etc.
         */
         this.breadcrum = {

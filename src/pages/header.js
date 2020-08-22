@@ -3,7 +3,7 @@ import { Selector, t } from 'testcafe'
 class Header {
     constructor() {
         /** 
-        * Groupy elements by html type
+        * Group elements by html tag
         * @example input, button, span, etc.
         */
         this.input = {
@@ -13,14 +13,15 @@ class Header {
             search: Selector('button').withAttribute('name', 'submit_search')
         }
     }
+
     /**
      * Create tasks (actions) that interact on the page
      */
 
-    /**
-     * @param product - product for looking
-     */
     async searchProduct(product) {
+        /**
+         * @param product - product for looking
+         */
         await t
             .typeText(this.input.search, `${product}`)
             .click(this.button.search)
