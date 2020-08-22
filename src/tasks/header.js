@@ -1,5 +1,5 @@
-import Header from '../pages/header'
 import { t } from 'testcafe'
+import Header from '../pages/header'
 
 class HeaderTasks extends Header {
     constructor() {
