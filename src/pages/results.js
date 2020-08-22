@@ -10,6 +10,9 @@ class Results {
             icon: Selector('.navigation_icon'),
             searchText: Selector('.navigation_page')
         }
+        this.ul = {
+            productContainer: Selector('ul.product_list')
+        }
     }
 
 }

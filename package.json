@@ -13,7 +13,7 @@
     "testcafe-reporter-spec": "^2.1.1"
   },
   "scripts": {
-    "test": "testcafe src/test",
+    "test": "testcafe chrome src/test",
     "test:browser-stack": "testcafe 'browserstack:Chrome@80.0:Windows 10' config.js src/test",
     "browsers-list": "testcafe --list-browsers"
   },

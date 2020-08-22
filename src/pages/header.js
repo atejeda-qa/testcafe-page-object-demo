@@ -1,4 +1,4 @@
-import { Selector, t } from 'testcafe'
+import { Selector } from 'testcafe'
 
 class Header {
     constructor() {
@@ -10,23 +10,11 @@ class Header {
             search: Selector('#search_query_top')
         }
         this.button = {
+            contactUs: Selector('#contact-link'),
+            signIn: Selector('.header_user_info'),
             search: Selector('button').withAttribute('name', 'submit_search')
         }
     }
-
-    /**
-     * Create tasks (actions) that interact on the page
-     */
-
-    async searchProduct(product) {
-        /**
-         * @param product - product for looking
-         */
-        await t
-            .typeText(this.input.search, `${product}`)
-            .click(this.button.search)
-    }
-
 }
 
-export default new Header()
+export default Header
